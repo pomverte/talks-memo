@@ -23,4 +23,6 @@ asciidoctorj {
 
 asciidoctor {
     logDocuments = true
+    attributes \
+        'source-highlighter': 'coderay'
 }

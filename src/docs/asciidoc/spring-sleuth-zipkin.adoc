@@ -1,0 +1,45 @@
+= Spring cloud et Zipkin à la rescousse du tracing distribué
+
+== Speaker
+
+* https://github.com/ImFlog
+* https://twitter.com/@Im_flog
+
+== Notes
+
+Une gestion de trace distribuée dans un environnement micros services.
+
+ Service => Tracer => Tracing System
+
+=== Tracing System
+
+Zipkin : une implémentation d'Open Tracing.
+Disponible en tant que starter spring boot et l'annotation `@EnableZipkinServer`
+
+Zipkin offe également un graphe de dépendances entre les micro services.
+Plus la liaison est épaisse, plus il y a d'appels d'un service vers l'autre.
+
+Analyse des traces quasiment en temps réel.
+
+=== Tracer
+
+Spring Sleuth, le tracer (client) de la stack Spring Cloud qui va fournir les métriques au serveur Zipkin.
+Personnalisation des traces via les `tag` (key/value)
+
+Une trace est composée de
+
+. un correlationId (traceId)
+. un spanId
+. un spanId parent (optionnel)
+. un ou plusieurs tags.
+
+Sampling : par défaut, seul 10% des traces seront envoyées à Zipkin.
+
+[source, java]
+----
+Tracer tracer;
+Span mySpan = tracer.createSpan("toto");
+tracer.addTag("key", "value");
+mySpan.logEvent("hello");
+tracer.close(mySpan);
+----
