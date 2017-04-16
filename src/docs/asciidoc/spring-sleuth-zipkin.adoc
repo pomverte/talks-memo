@@ -1,5 +1,7 @@
 = Spring cloud et Zipkin à la rescousse du tracing distribué
 
+DevoxxFR 2017 05/04/2017
+
 == Speaker
 
 * https://github.com/ImFlog
@@ -34,6 +36,8 @@ Une trace est composée de
 . un ou plusieurs tags.
 
 Sampling : par défaut, seul 10% des traces seront envoyées à Zipkin.
+
+=== Exemple de trace custom
 
 [source, java]
 ----
