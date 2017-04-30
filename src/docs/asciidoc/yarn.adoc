@@ -1,0 +1,14 @@
+= YARN
+
+> Yarn, encore un package manager ? (Erwan Deruelle)
+
+https://youtu.be/ipg1bNH_CX0
+
+Un package manager JavaScript pour NodeJS compatible avec les commandes de NPM.
+Utiliser YARN revient à utiliser les commandes de NPM modulo le fichier `yarn.lock`
+
+3 avantages :
+
+. fiabilité
+. vitesse
+. sécurité
