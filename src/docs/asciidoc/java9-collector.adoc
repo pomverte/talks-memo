@@ -5,7 +5,7 @@ DevoxxFR 2017 05/04/2017 16:30
 José Paumard
 
 * contributeur Open JDK
-* auteur des librairies https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.paumard%22%20AND%20a%3A%22streams-utils%22[streams-utils] et https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.paumard%22%20AND%20a%3A%22collectors-utils%22[collectors-utils]
+* auteur des librairies https://github.com/JosePaumard/streams-utils[streams-utils] et https://github.com/JosePaumard/collectors-utils[collectors-utils]
 
 https://youtu.be/iMaulmmsUC4
 
