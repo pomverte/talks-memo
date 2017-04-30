@@ -29,7 +29,7 @@ skip, limit, collect, summaryStatistics, groupingBy(lambda, downstream)
 
 Factoriser avec des fonctions qui prennent des fonctions lambda en paramètre et un type générique
 
- .collector(supplier, accumulator, combiner)
+ .collect(supplier, accumulator, combiner)
 
 * supplier : construction de liste
 * accumulator : ajout d'éléments
