@@ -21,9 +21,11 @@ L'opération est avec ou sans buffer.
 Exemple d'opération intermédiaire :
 
 * sans buffer (opération directe stateless) : Map, Filter, FlatMap
-* avec buffer (stateful) : Sort, Distinct
+* avec buffer (stateful) : Sort, Distinct, Skip, Limit
 
-skip, limit, collect, summaryStatistics, groupingBy(lambda, downstream)
+NOTE: skip et limit dépendent de l'ordre des éléments
+
+collect, summaryStatistics, groupingBy(lambda, downstream)
 
 == La maintenabilité des Stream et Collector
 
