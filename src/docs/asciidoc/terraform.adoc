@@ -1,10 +1,12 @@
-= Terraform
+= Terraform 101
 
-> Terraform 101 (Yannick lorenzati)
+DevoxxFR 2017 06/04/2017 18:10
+
+* Yannick lorenzati
+** Xebia
+** https://github.com/ylorenza
 
 https://youtu.be/6tgpv2-dEMM
-
-https://github.com/ylorenza
 
 Terraform est un outil de provisionning d'infrastucture (infra-as-code) de manière déclarative.
 Il est écrit en Go => un seul binaire à installer qui contient son propre runtime et ses dépendances.

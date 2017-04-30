@@ -1,13 +1,15 @@
-= systemd
+= Comment ça marche systemd déjà ?
 
-> Comment ça marche systemd déjà (Quentin Adam - Clément Delafargue)
+DevoxxFR 2017 06/04/2017 18:55
+
+* Quentin Adam
+** Founder CleverCloud
+** https://twitter.com/waxzce[@waxzce]
+* Clément Delafargue
+** CTO CleverCloud
+** https://twitter.com/clementd[@clementd]
 
 https://youtu.be/XwcpLtEyVXE
-
-CleverCloud
-
-* https://twitter.com/waxzce[@waxzce]
-* https://twitter.com/clementd[@clementd]
 
 PID1 : le prermier process du système UNIX
 
