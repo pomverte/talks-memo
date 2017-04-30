@@ -1,0 +1,36 @@
+= L'API Collector dans tous ses états
+
+DevoxxFR 2017 05/04/2017 16:30
+
+José Paumard
+
+* contributeur Open JDK
+* auteur des librairies `stream-util` et `collector-util`
+
+https://youtu.be/iMaulmmsUC4
+
+On ne parle pas d'API Collector à proprement parler car les Collector font parti de l'API Stream.
+
+== Petit rappel sur les stream
+
+Il existe 2 types d'opérations : intermédiaire et terminale.
+
+Une opération intermédiaire s'applique dans un stream et retourne un stream ou void.
+L'opération est avec ou sans buffer.
+
+Exemple d'opération intermédiaire :
+
+* sans buffer (opération directe stateless) : Map, Filter, FlatMap
+* avec buffer (stateful) : Sort, Distinct
+
+skip, limit, collect, summaryStatistics, groupingBy(lambda, downstream)
+
+Factoriser avec des fonctions qui prennent des fonctions lambda en paramètre et un type générique
+
+ .collector(supplier, accumulator, combiner)
+
+* supplier : construction de liste
+* accumulator : ajout d'éléments
+* combiner : ?
+
+Suite à l'opération terminale collector, on peut appler un fonction identite qui a pour role de finisher
