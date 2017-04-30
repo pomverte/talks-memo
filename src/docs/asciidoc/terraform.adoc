@@ -1,0 +1,56 @@
+= Terraform
+
+> Terraform 101 (Yannick lorenzati)
+
+https://youtu.be/6tgpv2-dEMM
+
+https://github.com/ylorenza
+
+Terraform est un outil de provisionning d'infrastucture (infra-as-code) de manière déclarative.
+Il est écrit en Go => un seul binaire à installer qui contient son propre runtime et ses dépendances.
+
+. Description de l'infrastructure
+. Calcul des différences avec l'infra existante
+. Calcul du graphe de dépendances des ressources
+. Lancement de la création des ressources
+
+Peut s'utiliser en combinaison avec Ansible pour le provisionning
+(ou bien utiliser les `provisionner` au niveau des ressources).
+
+Terraform prend en entrée un répertoire et va exécuter tous les fichiers `*.tf` dans celui ci.
+
+IMPORTANT: seul les fichiers du répertoire courant sont exécutés (pas de sous dossier)
+
+. Définition d'un provider
+(les informations d'authentification peuvent être stockée en variables d'envrionnement ou dans un fichier credentials)
+. Définition des ressources
+On attribut des tags aux ressources (voir ça comme des key/value labels).
+Accès à des variables via interpolation.
+
+Déclaration d'une variable :
+----
+variable "pays" {
+  type = "string"
+  default = "France"<1>
+}
+----
+<1> si la valeur par défaut n'est pas définie, Terraform prompt l'utilisateur ou regarde dans un fichier `terraform.tfvars`
+
+Génération d'un plan d'exécution par comparaison du fichier de description avec l'infrastucture courante
+
+ terraform plan
+
+Application du plan d'exécution
+
+ terraform apply
+ terraform show
+
+Terraform génère un fichier `terraformtfstate` qui va servir de base pour la commande `show`
+
+Génération de l'inventaire Ansible
+
+ terraform-inventory
+
+Destruction de l'infra
+
+ terraform destroy
