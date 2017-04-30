@@ -25,6 +25,8 @@ Exemple d'opération intermédiaire :
 
 skip, limit, collect, summaryStatistics, groupingBy(lambda, downstream)
 
+== La maintenabilité des Stream et Collector
+
 Factoriser avec des fonctions qui prennent des fonctions lambda en paramètre et un type générique
 
  .collector(supplier, accumulator, combiner)
