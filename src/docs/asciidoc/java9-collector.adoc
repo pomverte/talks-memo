@@ -15,6 +15,7 @@ On ne parle pas d'API Collector à proprement parler car les Collector font part
 
 Il existe 2 types d'opérations : intermédiaire et terminale.
 
+=== Opération intermédiaire
 Une opération intermédiaire s'applique dans un stream et retourne un stream ou void.
 L'opération est avec ou sans buffer.
 
@@ -24,6 +25,11 @@ Exemple d'opération intermédiaire :
 * avec buffer (stateful) : Sort, Distinct, Skip, Limit
 
 NOTE: skip et limit dépendent de l'ordre des éléments
+
+=== Opération terminale
+
+Ces opérations s'appliquent sur un stream et renvoient un résultat.
+Exemples : forEach, count, max, min, reduce, toArray, allMatch, anyMatch, noneMatch, findFirst, findAny, max, min, reduce
 
 collect, summaryStatistics, groupingBy(lambda, downstream)
 
