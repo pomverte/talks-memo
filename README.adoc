@@ -1,0 +1,11 @@
+== Mes notes ...
+
+== Génération de la doc
+
+Sous Linux
+
+ gradlew asciidoc
+
+Sous Windows
+
+ gradlew.bat asciidoc
