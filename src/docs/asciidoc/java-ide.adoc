@@ -1,0 +1,50 @@
+= Java IDE
+
+. Eclipse
+. IntelliJ
+
+.Raccourcis
+|===
+| Description | Eclipse | IntelliJ
+
+| Ouvrir une ressource | Ctrl + Shift + R |
+| Ouvrir un Type Java (vous pouvez taper les MajusculeDeMaClasse) | Ctrl + Shift + T |
+| Naviguer parmi les attributs et méthodes de la classe | Ctrl + O |
+| Aller à un numéro de ligne | Ctrl + L |
+| Aller à la dernière modification | Ctrl + Q |
+| Naviguer parmi les fichiers ouverts | Ctrl + E |
+| Ouvrir la déclaration d'une méthode | F3 |
+| Ouvrir la déclaration d'une méthode, son implémentation, ... | hold Ctrl down and click the hyperlinked |
+| Mettre le focus sur l'éditeur | F12 |
+| Rechercher dans le fichier courant | Ctrl + F |
+| Rechercher dans un fichier/dosser sélectionné | Ctrl + H |
+| Aller à l’occurrence [précédent] suivante | Ctrl [+ Shift] + K |
+| Supprimer la ligne courante | Ctrl + D |
+| Dupliquer la ligne courante en dessous | Ctrl + Alt + UP | CTRL + SHIFT + UP
+| Dupliquer la ligne courante au dessus | Ctrl + Alt + DOWN | CTRL + SHIFT + DOWN
+| Auto complétion | Ctrl + Space |
+| Formater le code | Ctrl + Shift + F |
+| Organiser les imports | Ctrl + Shift + O |
+| Aller à fermeture/ouverture de la parenthèse ou accolade | Ctrl + Shift + P |
+| Mettre en commentaire | Ctrl + / (ou Ctrl + Shift + C) |
+| Refactor en variable locale | Alt + Shift + L |
+| Refactor du nom de l'attribut, méthode, variable, constante, classe, ... | Alt + Shift + R |
+| Show annotation svn | Ctrl + Alt + A |
+| Synchroniser la sélection | Ctrl + Alt + S |
+| Maximiser la vue courante | CTRL + M |
+| Open Call Hierarchy | CTRL + ALT + H |
+| Split Editor | CTRL + _ |
+| Quick Search (case sensitive) (STS plugin) | CTRL + SHIFT + L |
+| Settings | ? | CTRL + ALT + S
+| Select enclosing | ATL + SHIFT + UP/DOWN | ?
+|===
+
+== Plugins
+=== Eclipse
+
+* https://spring.io/tools
+* https://marketplace.eclipse.org/content/ansi-escape-console
+* http://www.sonarlint.org/eclipse/
+* https://marketplace.eclipse.org/content/angular2-eclipse
+
+=== IntelliJ

@@ -1,0 +1,26 @@
+= systemd
+
+> Comment ça marche systemd déjà (Quentin Adam - Clément Delafargue)
+
+https://youtu.be/XwcpLtEyVXE
+
+CleverCloud
+
+* https://twitter.com/waxzce[@waxzce]
+* https://twitter.com/clementd[@clementd]
+
+PID1 : le prermier process du système UNIX
+
+Altérnative à `init.d`
+
+Configuration over script
+
+Recharger les fichiers de configuration des services
+
+ systemctl daemon-reload
+
+Créer un container
+
+ systemd-nspawn container
+
+* unit : ressource qui tourne sur la machine (ex : un service)
