@@ -7,8 +7,8 @@
 |===
 | Description                                                              | Eclipse                                  | IntelliJ
 
-| Ouvrir une ressource                                                     | Ctrl + Shift + R                         |
-| Ouvrir un Type Java (vous pouvez taper les MajusculeDeMaClasse)          | Ctrl + Shift + T                         |
+| Ouvrir une ressource                                                     | Ctrl + Shift + R                         | Ctrl + Shift + N
+| Ouvrir un Type Java (vous pouvez taper les MajusculeDeMaClasse)          | Ctrl + Shift + T                         | Ctrl + N
 | Naviguer parmi les attributs et méthodes de la classe                    | Ctrl + O                                 |
 | Aller à un numéro de ligne                                               | Ctrl + L                                 |
 | Aller à la dernière modification                                         | Ctrl + Q                                 |
@@ -34,7 +34,7 @@
 | Maximiser la vue courante                                                | Ctrl + M                                 |
 | Open Call Hierarchy                                                      | Ctrl + Alt + H                           |
 | Split Editor                                                             | Ctrl + _                                 |
-| Quick Search (case sensitive) (STS plugin)                               | Ctrl + Shift + L                         |
+| Quick Search (case sensitive) (STS plugin)                               | Ctrl + Shift + L                         | double Shift
 | Settings                                                                 | ?                                        | Ctrl + Alt + S
 | Select enclosing                                                         | Atl + Shift + UP/DOWN                    | ?
 |===
