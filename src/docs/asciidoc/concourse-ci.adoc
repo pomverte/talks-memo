@@ -1,0 +1,128 @@
+= Concourse CI
+
+== Install
+
+https://concourse.ci/vagrant.html
+
+.Install Concourse CI lite with Vagrant
+----
+$ vagrant init concourse/lite
+A `Vagrantfile` has been placed in this directory. You are now ready to `vagrant up` your first virtual environment! Please read the comments in the Vagrantfile as well as documentation on `vagrantup.com` for more information on using Vagrant.
+
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'concourse/lite' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'concourse/lite'
+    default: URL: https://atlas.hashicorp.com/concourse/lite
+==> default: Adding box 'concourse/lite' (v2.7.4) for provider: virtualbox
+    default: Downloading: https://atlas.hashicorp.com/concourse/boxes/lite/versions/2.7.4/providers/virtualbox.box
+==> default: Box download is resuming from prior download progress
+    default:
+==> default: Successfully added box 'concourse/lite' (v2.7.4) for 'virtualbox'!
+==> default: Importing base box 'concourse/lite'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'concourse/lite' is up to date...
+==> default: Setting the name of the VM: concourse-ci_default_1493824772289_96453
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => C:/concourse-ci
+----
+
+== Install Fly CLI
+
+. Open the Concourse UI in a browser : http://192.168.100.4:8080/
+. Download the installer for Windows into folder `C:\Program Files\Concourse\fly\`
+. Add a new environnement variable : `FLY` = `C:\Program Files\Concourse\fly\`
+. Update the `PATH` variable by appending `;%FLY%`
+
+Check it !
+----
+$ fly -h
+error: Usage:
+  C:\Users\lehh\Documents\titouti\ConcourseCI\fly\fly.exe [OPTIONS] <command>
+
+Application Options:
+  /t, /target:               Concourse target name
+  /v, /version               Print the version of Fly and exit
+      /print-table-headers   Print table headers even for redirected output
+
+Help Options:
+  /?                         Show this help message
+  /h, /help                  Show this help message
+
+Available commands:
+  abort-build        Abort a build (aliases: ab)
+  builds             List builds data (aliases: bs)
+  check-resource     Check a resource (aliases: cr)
+  checklist          Print a Checkfile of the given pipeline (aliases: cl)
+  containers         Print the active containers (aliases: cs)
+  destroy-pipeline   Destroy a pipeline (aliases: dp)
+  destroy-team       Destroy a team and delete all of its data (aliases: dt)
+  execute            Execute a one-off build using local bits (aliases: e)
+  expose-pipeline    Make a pipeline publicly viewable (aliases: ep)
+  get-pipeline       Get a pipeline's current configuration (aliases: gp)
+  help               Print this help message
+  hide-pipeline      Hide a pipeline from the public (aliases: hp)
+  hijack             Execute a command in a container (aliases: intercept, i)
+  login              Authenticate with the target (aliases: l)
+  logout             Release authentication with the target (aliases: o)
+  pause-job          Pause a job (aliases: pj)
+  pause-pipeline     Pause a pipeline (aliases: pp)
+  pause-resource     Pause a resource (aliases: pr)
+  pipelines          List the configured pipelines (aliases: ps)
+  prune-worker       Prune a stalled, landing, landed, or retiring worker (aliases: pw)
+  rename-pipeline    Rename a pipeline (aliases: rp)
+  set-pipeline       Create or update a pipeline's configuration (aliases: sp)
+  set-team           Create or modify a team to have the given credentials (aliases: st)
+  sync               Download and replace the current fly from the target (aliases: s)
+  targets            List saved targets (aliases: ts)
+  teams              List the configured teams (aliases: t)
+  trigger-job        Start a job in a pipeline (aliases: tj)
+  unpause-job        Unpause a job (aliases: uj)
+  unpause-pipeline   Un-pause a pipeline (aliases: up)
+  unpause-resource   Unpause a resource (aliases: ur)
+  validate-pipeline  Validate a pipeline's current configuration (aliases: vp)
+  volumes            List the active volumes (aliases: vs)
+  watch              Stream a build's output (aliases: w)
+  workers            List the registered workers (aliases: ws)
+----
+
+== Use me
+
+----
+$ fly -t ci-lite login -c http://192.168.100.4:8080
+logging in to team 'main'
+
+
+target saved
+----
+
+NOTE: how to activate authentication ?
+
+== Vagrant shutdown
+
+ $ vagrant halt
