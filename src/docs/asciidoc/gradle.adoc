@@ -1,8 +1,45 @@
 = Gradle
 
-Build file is in a file named `build.gradle`
+`build.gradle` = build file configuration in Groovy
 
 .list all the avaible tasks from the build file
 ----
-gradle task
+ $ gradle task
+----
+
+WARNING: investigate configuration phase and execution phase
+
+== Features
+
+. build speed
+. gradle daemon
+. gradle wrapper
+. compatible with maven repository
+. build configuration written in Groovy
+
+== Custom task
+
+[source, groovy]
+----
+task hello {
+  group 'Greeting'
+  description 'Tutorial'
+  doLast { println 'World !' } <1>
+  doFirst { println 'Hello' }
+}
+----
+
+ $ gradle hello
+
+TIP: `hello << { println 'do last' }` 
+
+== Variable
+[source, groovy]
+----
+ext {
+  springBootVersion = '1.5.2.RELEASE'
+}
+ task hello {
+  println "$springBootVersion"
+}
 ----
