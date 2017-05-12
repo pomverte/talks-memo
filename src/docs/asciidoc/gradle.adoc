@@ -1,0 +1,8 @@
+= Gradle
+
+Build file is in a file named `build.gradle`
+
+.list all the avaible tasks from the build file
+----
+gradle task
+----
