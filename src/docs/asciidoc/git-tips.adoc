@@ -1,0 +1,38 @@
+= GIT tips
+
+.Pretty log
+----
+git log --graph --pretty=oneline --all --decorate --abbrev-commit
+----
+
+.Aliases
+----
+git config --global alias.st status
+git config --global alias.lg "log --graph --date=relative --pretty=tformat:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --all"
+----
+
+TIP: .gitignore initiliaze https://www.gitignore.io/
+
+== GIT-SVN
+Checkout a project from SVN repository
+
+ git svn clone -s http://10.81.134.17/svn-aesn/bridge
+
+Before pushing anything to SVN repository
+
+ git svn fetch
+ git svn rebase
+
+NOTE: classic `git rebase` might be use instead of `git svn rebase`
+
+Pushing to SVN repo (commit in SVN term)
+
+ git svn dcommit
+
+== References
+- https://git-scm.com/
+- http://www.ndpsoftware.com/git-cheatsheet.html
+- Git happens https://vimeo.com/46010208#
+- Git branching : http://nvie.com/posts/a-successful-git-branching-model/
+- http://think-like-a-git.net/
+- http://learngitbranching.js.org/?demo
