@@ -1,0 +1,16 @@
+= Java and co
+
+== Truststore
+
+Show certificate
+
+ $ keytool -printcert -file file.cer
+ $ keytool -list -v -keystore "%JAVA_HOME%\jre\lib\security\cacerts" -alias artifactory -storepass changeit
+ 
+Install certificate
+
+ $ keytool -import -trustcacerts -noprompt -keystore "%JAVA_HOME%\jre\lib\security\cacerts" -storepass changeit -alias artifactory -file file.cer
+
+Delete certificate
+
+ $ keytool -delete -noprompt -alias artifactory -keystore "%JAVA_HOME%\jre\lib\security\cacerts" -storepass changeit
