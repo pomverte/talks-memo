@@ -1,7 +1,5 @@
 = Apache Kafka
 
-3 nuances de MoM (Guillaume Arnaud) : https://youtu.be/Bc0QeaupQ78?t=11m9s
-
 == Concepts
 
 - message : key / value (byte)
@@ -44,3 +42,8 @@ En revanche, un même message peut être lu par plusieurs `consumer-group`
 Un `consumer`/`consumer-group` peut s'abonner à plusieurs `partition`
 
 NOTE: l'ordre de lecture de message est donc garanti et gérée par le `consumer`
+
+== Références
+
+- 3 nuances de MoM (Guillaume Arnaud) : https://youtu.be/Bc0QeaupQ78?t=11m9s
+- http://blog.xebia.fr/2016/03/04/apache-kafka-une-plateforme-centralisee-des-echanges-de-donnees/
