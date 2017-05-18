@@ -1,0 +1,46 @@
+= Apache Kafka
+
+3 nuances de MoM (Guillaume Arnaud) : https://youtu.be/Bc0QeaupQ78?t=11m9s
+
+== Concepts
+
+- message : key / value (byte)
+- publisher : client qui envoie un message
+- topic : espace logique de réception de messages
+- partition : sous ensemble physique d'un topic
+- consumer : consomme les messages
+- consumer-group : regroupement logique de consumer
+
+Le `producer` écrit son message dans un topic.
+Le message est stocké un offset donné.
+
+Le `consumer` lit les messages dans une `partition` à partir d'un offset.
+
+Le delta entre l'offset du `producer` et celui du `consumer` est le lag
+
+WARNING: pas d'acknowledgment au niveau des messages
+
+== Persistence
+
+La persitence des messages ce fait sur le file system dans des fichiers en mode append-only.
+Une `partition` est composée de `segment` (fichier, taille par défaut : 1 Go).
+Dès qu'une `segment` est atteint la taille maximum, un nouveau segment est crée pour la `partition` et les messages sont alors écrits à la fin de ce nouveau `segment`.
+
+La rétention des segments (et donc des message) se fait au niveau du ``topic`.
+
+== Scalabilité
+
+Division d'un topic en partition qui sont déployées sur plusieurs noeuds.
+Replication des partitions : un leader et 1 ou plusieurs follower.
+On retrouve ici aussi la notion de lag entre replica : le replica lag
+
+Un message ne sera lu que par *un seul* `consumer`.
+
+Si plusieurs `consumer` sont abonnés à une même partition, il se peut donc qu'un des `consumer` ne soit pas actif.
+Ce use case peut être utile si un `consumer` est down ...
+
+En revanche, un même message peut être lu par plusieurs `consumer-group`
+
+Un `consumer`/`consumer-group` peut s'abonner à plusieurs `partition`
+
+NOTE: l'ordre de lecture de message est donc garanti et gérée par le `consumer`
