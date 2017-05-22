@@ -56,6 +56,8 @@ Le fichier qui va faire la liaison entre les rôles et l'inventaire
 
  $ ansible all -m ping -i /path/to/file/inventory
 
+NOTE: this is a adhoc command
+
 === Configuration
 
 Ansible peut être configuré à différents niveaux (surcharge de conf possible donc)
