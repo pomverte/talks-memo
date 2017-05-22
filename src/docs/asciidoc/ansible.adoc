@@ -1,0 +1,69 @@
+= Ansible
+
+> One tool to deploy them all ...
+
+Un outil de configuration et de provisionning qui s'inscrit dans la mouvance DevOps.
+
+== Concepts
+
+=== Inventory
+
+L'inventaire : le fichier dans lequel on déclare les machines sur lesquelles Ansible va déployer
+
+----
+[service_1]
+www.my-server1.com
+www.my-server2.com
+
+[service_2]
+www.my-server3.com
+www.my-server4.com
+----
+
+=== Task
+
+Tache unitaire à exécuter
+
+[source, yaml]
+----
+# Il est nécessaire d'installer "unzip" s'il n'existe pas. 
+- name: "Installation de Unzip s'il n'est pas présent"
+  apt:
+    pkg: unzip
+    state: present
+----
+
+=== Role
+
+Un ensemble de ''Task'' à exécuter qui peut prendre des variables en entrées et avoir d'autres ''Role'' en prérequis.
+Les variables d'un rôle peuvent être données en entrée ou définies par défaut.
+
+IMPORTANT: chaque rôle doit être _idempotent_ càd que si on le réexécute, on obtiendra le même résultat
+
+Par convention, le nom d'un role est aussi le nom d'un dossier qui contient ces fichiers. A l'intérieur du dossier-role, on trouvera également d'autre dossier respectant une convention de nommage
+
+http://docs.ansible.com/ansible/playbooks_best_practices.html
+
+=== Playbook
+
+Le fichier qui va faire la liaison entre les rôles et l'inventaire
+
+> qu'est ce qu'on va faire et où ?
+
+== Exploitation
+
+=== PING
+
+ $ ansible all -m ping -i /path/to/file/inventory
+
+=== Configuration
+
+Ansible peut être configuré à différents niveaux (surcharge de conf possible donc)
+
+http://docs.ansible.com/ansible/intro_configuration.html
+
+== Références
+
+* http://docs.ansible.com
+* https://github.com/ansible/ansible-examples
+* https://galaxy.ansible.com
