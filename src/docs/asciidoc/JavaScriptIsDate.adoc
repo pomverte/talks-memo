@@ -1,0 +1,68 @@
+= Parceque j'ai fais du JS avant les framework JS
+
+[source, javascript]
+----
+/**
+ * Prend une date en entree et verifie son format (jj/mm/aaaa) On verifie
+ * egalement la coherence des jours, mois et les annees bissextile
+ * 
+ * @author HVLE
+ * @param date
+ *            date a verifier
+ * @return vrai si la date est bien formee
+ */
+function isDate(date) {
+  var reg = /^(\d{2})[\/](\d{2})[\/](\d{4})$/;
+	var matchArray = date.match(reg);
+	var result = true;
+	message = "";
+
+	if (matchArray == null
+			|| matchArray[1] == null
+			|| matchArray[2] == null
+			|| matchArray[3] == null) {
+		message = "La date doit être selon le format jj/mm/aaaa.";
+		alert(message);
+		return false;
+	}
+
+	// parse date into variables
+	// l'indice du match est determine par la position de la parenthese ouvrante
+	// / fermante
+	var day = matchArray[1];
+	var month = matchArray[2];
+	var year = matchArray[3];
+
+	if (day < 1 || day > 31) {
+		message = message + "\n" + "Le jour doit être compris entre 1 et 31.";
+		result = false;
+	}
+
+	if (month < 1 || month > 12) {
+		message = message + "\n" + "Le mois doit être compris entre 1 et 12.";
+		result = false;
+	}
+
+	// mois de 31 jours
+	if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+		message = message + "\n" + "Le mois " + month + " n'a pas 31 jours!";
+		result = false;
+	}
+
+	// 29 fevrier
+	if (month == 2) {
+		var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+		if (day > 29 || (day == 29 && !isleap)) {
+			message = message + "\n" + "Février " + year + " n'a pas " + day
+					+ " jours!";
+			result = false;
+		}
+	}
+
+	if (!result) {
+		alert(message);
+	}
+
+	return result;
+}
+----
