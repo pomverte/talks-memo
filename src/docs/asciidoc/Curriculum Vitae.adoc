@@ -1,0 +1,261 @@
+= Curriculum Vitae - Hong Viet Lê - Expert Technique
+:toc:
+:toc-title: Sommaire
+
+== Contact
+
+*Nom complet* : Hà Hông Viêt, Lê
+
+*Résidence* : Paris, France
+
+*Email* : 
+
+*Github* : https://github.com/pomverte/
+
+== Parcours professionnel
+
+Je suis expert technique chez CGI (Unilog, Logica) avec une affinité pour les technologies JEE.
+
+Les nouveaux challenges techniques, le travail en équipe et le partage de connaissances sont mes sources de motivation.
+
+Mes sujets de veille technologique sont les applications déployables et scalables dans le cloud, les architectures micro services ainsi que l'automatisation des processus d'industrialisation.
+
+
+=== Résumé
+
+==== Expert Technique
+
+
+[align="center",frame="topbot"]
+|===
+| Période           | Client                       | Projet
+
+| 07/2016 - 05/2017 | AESN                         | <<gbcp-aesn, GBCP>>
+| 11/2014 - 06/2016 | ASP                          | <<synergie-asp, Synergie>>
+| 11/2013 - 11/2014 | Service du Premier Ministre  | <<sise-spm, SISE>>
+| 03/2013 - 08/2013 | Conseils Régionaux de France | <<ent-openent, Open ENT>>
+|===
+
+==== Expert Technique Junior
+
+[align="center",frame="topbot"]
+|===
+| Période           | Client                           | Projet
+
+| 01/2013 - 02/2013 | DGFIP                            | <<andromede-dgfip,Andromède>>
+| 10/2010 - 12/2012 | Conseil Régional d'Ile de France | <<ent-lilie, ENT Lilie>>
+| 02/2010 - 02/2011 | Conseil Régional de Picardie     | <<ent-leo, ENT Picardie>>
+|===
+
+==== Ingénieur en Technologie de l'Information
+
+[align="center",frame="topbot"]
+|===
+| Période           | Client | Projet
+
+| 10/2008 - 06/2010 | INSERM | <<gaia-inserm, GAIA>>
+| 11/2008 - 09/2009 | INSERM | <<fr-inserm, Inserm.FR>>
+| 04/2008 - 10/2008 | INSERM | <<fr-inserm2, Inserm.FR (stage de fin d'étude)>>
+|===
+
+=== Détails
+
+[[gbcp-aesn]]
+==== GBCP - AESN - juillet 2016 à mai 2017
+
+*Expert Technique*
+
+Mise en place du module de communication entre la nouvelle application de gestion comptable Qualiac et les applications du SI de l'Agence de l'Eau de Seine Normandie.
+
+* Etude de faisabilité, spécification et développement spécifique autour du progiciel Qualiac
+* Interfaçage du progiciel dans le SI client
+* Soutenance des choix du socle technique du nouveau module
+* Rédaction de spécification technique du nouveau module de communication (modélisation UML)
+* Mise à jour du Dossier d'Architecture Technique du SI
+* Mise en place du socle technique du module d'échange entre les applications du SI et le nouveau progiciel sur base des EIP
+* Envoie de document en GED
+
+*Environnement* :
+
+* Java 7, Maven 3, Spring (Boot, Web, Integration, Webservice), Avro, Selma, Lombok, JDBC
+* Git SVN, Jenkins, Nexus, SonarQube, AsciiDoctor
+* Qualiac
+* GED Poseidon (SESIN)
+
+
+[[synergie-asp]]
+==== Synergie - ASP – novembre 2014 à fin juin 2016
+
+*Expert Technique*
+
+Refonte du Système d'Information de l'Agence de Service de Paiement.
+
+* Développement de modules et lots d'évolutions
+* Encadrement technique d'équipe (jusqu'à 14 développeurs)
+* Revue de code : préparation et animation d'atelier sur les bonnes pratiques et normes de développement
+* Assurer l'application des bonnes pratiques et normes de développement
+* Packaging des livrables du SI pour livraison client
+* Maintenance des environnements de développement
+* Développement de rôles Ansible
+* Rédaction de spécification technique générale
+* Participation autour du Dossier d'Architecture Technique
+
+*Environnement* :
+
+* Java 7, Struts 2.3, Hibernate 4.1, QueryDSL, Dozer Mapping, Groovy / Grails
+* Eco système Spring 3 : Core, Security, Integration, Batch
+* Tomcat 7, PostgreSQL 9, LemonLDAP, LogStach, Kibana, Redis, ActiveMQ
+* Maven 3, Jenkins, Nexus, SonarQube, Ansible 1.6, LXC
+* Talend ESB
+* Mantis, Dokuwiki
+
+
+[[sise-spm]]
+==== SISE - Service du Premier Ministre – novembre 2013 à novembre 2014
+
+*Expert Technique*
+
+Mise en place d'un outil de suivi financier des projets financés par le Commissariat Général à l'Investissement rattaché aux services du Premier Ministre.
+
+* Participation à la phase d'avant vente en tant que consultant Jasper
+* Mise en place et maintenance des plateformes de développement
+* Conception et modélisation de base de données
+* Encadrement de développeurs (3 personnes)
+* Formation des développeurs sur JasperReport et JasperServer
+* Participation aux ateliers techniques avec le client
+* Préparation des packages de livraison
+* Rédaction des procédures d'installation de livraisons
+* Assistance à l'installation des livraisons sur les environnements clients
+
+*Environnement* : JasperServer Pro 5.5, Tomcat 7.0, Debian 3.2, MySQL 5.5, Git, OpenLDAP, MySQL Workbench, Navicat, Spring MVC, Outils Talend
+
+
+[[ent-openent]]
+==== ENT - Conseils Régionaux de France - mars 2013 à août 2013
+
+*Expert Technique*
+
+Maintenance évolutive de l'Environnement Numérique de Travail utilisé par les établissements scolaires dans plusieurs régions de France.
+
+* Audit du chantier de refonte du serveur d'authentification
+* Correction applicative
+* Refonte de la base d'administration et de l'api du portail et de ses services 
+* Participation à une étude de mise en place d'une version mobile du portail ou d'une application
+
+*Environnement* : JEE (Struts 2, Spring Webflow 2, iBatis, Dozer), PostgreSQL, LDAP, GED Alfresco, CentOS, Subversion, Maven, Nexus, Hudson, Sonar, JIRA
+
+
+[[andromede-dgfip]]
+==== Andromède - DGFIP - janvier 2013 à février 2013
+
+*Expert Technique Junior*
+
+Maintenance évolutive de l'application permettant aux agents du ministère des finances publiques de remanier et traiter les déclarations d'impôts.
+
+* Analyse et feedback des spécifications fonctionnelles d'évolutions
+* Implémentation d'évolutions applicatives
+* Optimisation de requêtes SQL
+* Support technique au près des développeurs juniors
+
+*Environnement* : JEE (Spring Webflow 2, Dozer, Hibernate, JasperReport), Oracle, CentOS, Apache, Tomcat, Subversion, Maven, Nexus, Jenkins, Sonar, BugZilla
+
+
+[[ent-lilie]]
+==== ENT - Conseils Régionaux de France - octobre 2010 à décembre 2012
+
+*Expert Technique Junior*
+
+Réalisation du référentiel des applications la Poste et étude de la gestion des connaissances au niveau organisationnel
+
+* Montée en compétence technique et fonctionnelle sur l'outil de suivi des demandes (JIRA)
+* Conception et réalisation d'un nouveau module (application web) pour le portail de l'ENT
+* Support et conseil technique aux développeurs juniors
+* Montée en compétence sur le Serveur d'Authentification Central (CAS)
+* Refonte et montée de version du serveur CAS
+* Maintenance évolutive des passerelles SSO avec divers partenaires
+* Conseil et expertise sur le chantier des SSO auprès de nos clients (Conseils Régionaux) et du Ministère de l'Education National
+* Préparation et formation technique sur le serveur CAS
+* Maintenance des environnements de développement (serveurs applicatifs et de bases de données)
+
+*Environnement* : JEE (Struts 2, Spring Webflow 2, iBatis, Dozer), PostgreSQL, Apache, Tomcat, LDAP, GED Alfresco, CentOS, Subversion, Maven, Nexus, Hudson, Sonar, JIRA
+
+
+[[ent-leo]]
+==== ENT - Conseil Régional de Picardie - février 2010 à février 2011
+
+*Expert Technique Junior*
+
+Maintenance évolutive du portail développé pour les besoins des lycées de la Région de Picardie.
+
+* Etude de performance des plateformes
+* Réalisation d'évolutions
+* Mise en place d'un environnement de développement
+* Reconfiguration de l'outil de build Maven
+
+*Environnement* : JEE (Struts 1), Oracle, Apache, Tomcat, Windows Server, Subversion, Maven, Artifactory, Mantis
+
+
+[[gaia-inserm]]
+==== Inserm GAIA - INSERM - novembre 2008 à juin 2010
+
+*Ingénieur en Technologie de l'Information*
+
+Maintenance évolutive de l'application web de saisie et traitement des dossiers d'évaluation et d'inscriptions aux concours internes.
+
+* Réalisation de chiffrages
+* Rédaction de spécifications techniques et fonctionnelles
+* Rédaction et test de fiche de test unitaire
+* Maintenance évolutive
+* Responsable de livraison
+* Assistance et conseil client
+* Préparation et formation technique (réversibilité)
+
+*Environnement* : JEE, Oracle, Apache, Tomcat, Subversion, Mantis
+
+
+[[fr-inserm]]
+==== Inserm.FR - INSERM - novembre 2008 à septembre 2009
+
+*Ingénieur en Technologie de l'Information*
+
+Maintenance corrective du CMS du site vitrine de l'Inserm. Support à la migration sur le nouveau CMS.
+
+* Correction d'anomalies applicatives
+* Livraison et déploiement des composants applicatifs
+* Reprise de données
+* Préparation et formation technique (réversibilité)
+
+*Environnement* : JEE, PostgreSQL, Ant, Apache, Tomcat, RedHat, eZPublish, MySQL, Subversion, Mantis
+
+
+[[fr-inserm2]]
+==== Inserm.FR - INSERM - avril 2018 à octobre 2008
+
+*Développeur stagiaire*
+
+Maintenance évolutive du CMS (Gestionnaire de Contenu) du site vitrine de l'Inserm.
+
+*	Correction d'anomalies applicatives
+*	Réalisation d'évolutions applicatives
+*	Etablir le contact avec le client pour
+**	Validation de spécifications
+**	Conseils et expertise
+*	Livraison et déploiement des composants applicatifs
+
+*Environnement* : JEE, PostgreSQL, Ant, Apache, Tomcat, RedHat, Subversion, Mantis
+
+
+== Scolarité
+
+* Master 2 STS (2008) – Science Technologie Santé, Université Paris Sud XI Orsay
+
+
+== Langues
+
+* Anglais : Bon niveau (TOEIC en 2008)
+* Vietnamien : Langue maternelle
+
+== Loisirs
+
+* Voyages
+* Arts martiaux (pratique compétitive)
