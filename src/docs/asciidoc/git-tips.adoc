@@ -11,6 +11,13 @@ git config --global alias.st status
 git config --global alias.lg "log --graph --date=relative --pretty=tformat:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --all"
 ----
 
+.Proxy configuration
+----
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+git config --global --unset http.proxy
+git config --global --get http.proxy
+----
+
 TIP: .gitignore initiliaze https://www.gitignore.io/
 
 == GIT-SVN
