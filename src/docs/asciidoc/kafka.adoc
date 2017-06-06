@@ -43,6 +43,11 @@ Un `consumer`/`consumer-group` peut s'abonner à plusieurs `partition`
 
 NOTE: l'ordre de lecture de message est donc garanti et gérée par le `consumer`
 
+== Quizz
+
+* clé optionnelle ?
+* stratégie de partionnement ?
+
 == Références
 
 - 3 nuances de MoM (Guillaume Arnaud) : https://youtu.be/Bc0QeaupQ78?t=11m9s
