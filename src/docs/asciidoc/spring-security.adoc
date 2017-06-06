@@ -1,0 +1,23 @@
+= Spring Security
+
+[source, java]
+----
+@EnableWebSecurity
+public class CustomWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .csrf().disable() <1>
+            .authorizeRequests()
+                .antMatchers("/open").permitAll() <2>
+                .anyRequest().authenticated() <3>
+            .and().httpBasic() <4>
+        ;
+    }
+}
+----
+<1> disable CSRF
+<2> unprotected
+<3> authentication required
+<4> basic auth activated
