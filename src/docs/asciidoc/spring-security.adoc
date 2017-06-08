@@ -15,9 +15,16 @@ public class CustomWebSecurityConfigurerAdapter extends WebSecurityConfigurerAda
             .and().httpBasic() <4>
         ;
     }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication() <5>
+            .withUser("john").password("123").roles("USER");
+    }
 }
 ----
 <1> disable CSRF
 <2> unprotected
 <3> authentication required
 <4> basic auth activated
+<5> in memory user database
