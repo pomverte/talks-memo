@@ -1,11 +1,13 @@
 == Mes notes ...
 
-== G�n�ration de la doc
+== Génération de la doc
 
 Sous Linux
 
- gradlew asciidoc
+ gradlew
 
 Sous Windows
 
- gradlew.bat asciidoc
+ gradlew.bat
+
+TIP: la task `asciidoc` est lancée par défaut
