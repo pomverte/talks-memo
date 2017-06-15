@@ -1,3 +1,5 @@
+defaultTasks 'asciidoc'
+
 buildscript {
 	ext {
 		asciidoctorGradleVersion = '1.5.3'
