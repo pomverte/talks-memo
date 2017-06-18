@@ -3,7 +3,15 @@
 . Eclipse
 . IntelliJ
 
-.Raccourcis
+== Eclipse formatter
+
+[source, xml]
+====
+include::eclipse-code-formatter.xml[]
+====
+
+== Raccourcis
+
 |===
 | Description                                                              | Eclipse                                  | IntelliJ
 
