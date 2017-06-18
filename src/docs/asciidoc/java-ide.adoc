@@ -48,3 +48,5 @@
 * https://marketplace.eclipse.org/content/angular2-eclipse
 
 === IntelliJ
+
+* https://plugins.jetbrains.com/plugin/6546-eclipse-code-formatter[Eclipse Code Formatter]
