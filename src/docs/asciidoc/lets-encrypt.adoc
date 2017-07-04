@@ -1,0 +1,8 @@
+= Let's Encrypt & cerbot
+
+source : https://certbot.eff.org/#debianjessie-nginx
+
+----
+sudo apt-get install certbot -t jessie-backports
+sudo certbot certonly --webroot -w /usr/share/nginx/html -d cgi-chatbot.westeurope.cloudapp.azure.com
+----
