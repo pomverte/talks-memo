@@ -26,7 +26,7 @@ include::eclipse-code-formatter.xml[]
 | Mettre le focus sur l'éditeur                                            | F12                                      |
 | Rechercher dans le fichier courant                                       | Ctrl + F                                 |
 | Rechercher dans un fichier/dosser sélectionné                            | Ctrl + H                                 | Ctrl + Shift + F
-| Aller à l’occurrence [précédent] suivante                                | Ctrl [+ Shift] + K                       |
+| Aller à l’occurrence [précédent] suivante                                | Ctrl [+ Shift] + K                       | [ Shift +] F3
 | Supprimer la ligne courante                                              | Ctrl + D                                 |
 | Dupliquer la ligne courante en dessous                                   | Ctrl + Alt + UP                          | Ctrl + Shift + UP
 | Dupliquer la ligne courante au dessus                                    | Ctrl + Alt + DOWN                        | Ctrl + Shift + DOWN
