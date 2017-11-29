@@ -20,6 +20,7 @@ Configuration over script
 Recharger les fichiers de configuration des services
 
  systemctl daemon-reload
+ systemctl cat my-service.service
 
 Créer un container
 
