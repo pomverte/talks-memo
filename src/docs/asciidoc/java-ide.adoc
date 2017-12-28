@@ -24,7 +24,7 @@ include::eclipse-code-formatter.xml[]
 | Ouvrir la déclaration d'une méthode                                      | F3                                       |
 | Ouvrir la déclaration d'une méthode, son implémentation, ...             | hold Ctrl down and click the hyperlinked |
 | Mettre le focus sur l'éditeur                                            | F12                                      |
-| Rechercher dans le fichier courant                                       | Ctrl + F                                 |
+| Rechercher dans le fichier courant                                       | Ctrl + F                                 | Ctrl + F / Ctrl + R
 | Rechercher dans un fichier/dosser sélectionné                            | Ctrl + H                                 | Ctrl + Shift + F
 | Aller à l’occurrence [précédent] suivante                                | Ctrl [+ Shift] + K                       | [ Shift +] F3
 | Supprimer la ligne courante                                              | Ctrl + D                                 |
