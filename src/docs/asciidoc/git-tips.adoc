@@ -8,7 +8,7 @@ git log --graph --pretty=oneline --all --decorate --abbrev-commit
 .Aliases
 ----
 git config --global alias.st status
-git config --global alias.lg "log --graph --date=relative --pretty=tformat:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --all"
+git config --global alias.lg "log --graph --date=relative --pretty=tformat:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --all --max-count=100"
 ----
 
 .Proxy configuration
