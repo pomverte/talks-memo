@@ -53,6 +53,8 @@ include::eclipse-code-formatter.xml[]
 * https://spring.io/tools
 * https://marketplace.eclipse.org/content/ansi-escape-console
 * http://www.sonarlint.org/eclipse/
+* http://marketplace.eclipse.org/content/jenkins-editor
+* http://marketplace.eclipse.org/content/docker-editor
 * https://marketplace.eclipse.org/content/angular2-eclipse
 
 === IntelliJ
