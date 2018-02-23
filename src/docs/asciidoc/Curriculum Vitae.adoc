@@ -65,6 +65,10 @@ Mes sujets de veille technologique sont les applications déployables et scalabl
 
 [[chatbot]]
 ==== Chatbot eCitoyen - CNAV - juin 2017
+
+*Expert Technique*
+
+
 Encadrement technique, audit de code et de l'architecture de la solution.
 Mise en place du service de génération de jeton d'authentification (Json Web Token).
 
@@ -73,12 +77,19 @@ Mise en place du service de génération de jeton d'authentification (Json Web T
 
 [[ao-adp]]
 ==== Réponse à Appel d'Offre - Aéroport De Paris - juin 2017
+
+*Expert Technique*
+
 Rédaction de la réponse et préparation de soutenance de la partie technique d'un appel d'offre dans le cadre d'un marché de maîtrise d'oeuvre.
 Proposition d'une architecture technique générale pour répondre aux exigences de l'appel d'offre (sécurité des données et haute disponibilité).
 
 
 [[paris-assas]]
 ==== Cartographie applicative du SI - Université Paris II Panthéon Assas - juin 2017
+
+*Expert Technique*
+
+
 Effectuer un état des lieux du patrimoine applicatif et réaliser une analyse des informations recueillies.
 L'analyse porte sur :
 - l'organisation des services du SI
