@@ -91,12 +91,12 @@ Proposition d'une architecture technique générale pour répondre aux exigences
 
 
 Effectuer un état des lieux du patrimoine applicatif et réaliser une analyse des informations recueillies.
-L'analyse porte sur :
+Analyser et fournir des préconisations sur les points suivants :
 - l'organisation des services du SI
 - la diversité technologique
 - l'architecture technique générale
 - la maintenance et l'évolutivité du parc
-- le niveau d'industrialisation.
+- le niveau d'industrialisation
 
 
 [[gbcp-aesn]]
