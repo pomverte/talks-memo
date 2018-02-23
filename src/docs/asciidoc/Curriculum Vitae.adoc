@@ -1,4 +1,4 @@
-= Curriculum Vitae - Hong Viet Lê - Expert Technique
+= Curriculum Vitae - Hong Viet Lê - Architect Technique
 :toc:
 :toc-title: Sommaire
 
@@ -14,7 +14,7 @@
 
 == Parcours professionnel
 
-Je suis expert technique chez CGI (Unilog, Logica) avec une affinité pour les technologies JEE.
+Je suis architect technique chez CGI (Unilog, Logica) avec une affinité pour les technologies JEE.
 
 Les nouveaux challenges techniques, le travail en équipe et le partage de connaissances sont mes sources de motivation.
 
@@ -30,6 +30,9 @@ Mes sujets de veille technologique sont les applications déployables et scalabl
 |===
 | Période           | Client                       | Projet
 
+| 06/2017           | CNAV                         | <<chatbot, ChatBot eCitoyen>>
+| 06/2017           | Aéroport De Paris            | <<ao-adp, Réponse à Appel d'Offre>>
+| 06/2017           | Université Paris II Assas    | <<paris-assas, Cartographie de SI>>
 | 07/2016 - 05/2017 | AESN                         | <<gbcp-aesn, GBCP>>
 | 11/2014 - 06/2016 | ASP                          | <<synergie-asp, Synergie>>
 | 11/2013 - 11/2014 | Service du Premier Ministre  | <<sise-spm, SISE>>
@@ -59,6 +62,31 @@ Mes sujets de veille technologique sont les applications déployables et scalabl
 |===
 
 === Détails
+
+[[chatbot]]
+==== Chatbot eCitoyen - CNAV - juin 2017
+Encadrement technique, audit de code et de l'architecture de la solution.
+Mise en place du service de génération de jeton d'authentification (Json Web Token).
+
+*Environnement* : Spring Boot, Java 8, ElasticSearch, Redis, Docker, Cloud Azure
+
+
+[[ao-adp]]
+==== Réponse à Appel d'Offre - Aéroport De Paris - juin 2017
+Rédaction de la réponse et préparation de soutenance de la partie technique d'un appel d'offre dans le cadre d'un marché de maîtrise d'oeuvre.
+Proposition d'une architecture technique générale pour répondre aux exigences de l'appel d'offre (sécurité des données et haute disponibilité).
+
+
+[[paris-assas]]
+==== Cartographie applicative du SI - Université Paris II Panthéon Assas - juin 2017
+Effectuer un état des lieux du patrimoine applicatif et réaliser une analyse des informations recueillies.
+L'analyse porte sur :
+- l'organisation des services du SI
+- la diversité technologique
+- l'architecture technique générale
+- la maintenance et l'évolutivité du parc
+- le niveau d'industrialisation.
+
 
 [[gbcp-aesn]]
 ==== GBCP - AESN - juillet 2016 à mai 2017
