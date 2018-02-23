@@ -72,7 +72,7 @@ Mes sujets de veille technologique sont les applications déployables et scalabl
 Encadrement technique, audit de code et de l'architecture de la solution.
 Mise en place du service de génération de jeton d'authentification (Json Web Token).
 
-*Environnement* : Spring Boot, Java 8, ElasticSearch, Redis, Docker, Cloud Azure
+*Environnement* : Git, Spring Boot, Java 8, ElasticSearch, Redis, Docker, Cloud Azure
 
 
 [[ao-adp]]
