@@ -20,6 +20,15 @@ git config --global --get http.proxy
 
 TIP: .gitignore initiliaze https://www.gitignore.io/
 
+.Git bisect
+----
+git bisect start
+git bisect good 14fbf6dcde11f41bbd167088c97bc7f9cf34a15d
+git bisect bad 5ce2bd2c8b24f7a9f2df70ed0c123e5b2a915f57
+git bisect bad
+git bisect reset
+----
+
 == GIT-SVN
 Checkout a project from SVN repository
 
