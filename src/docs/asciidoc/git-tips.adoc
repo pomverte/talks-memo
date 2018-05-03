@@ -5,6 +5,11 @@
 git log --graph --pretty=oneline --all --decorate --abbrev-commit
 ----
 
+.Compare branche's log
+----
+git log origin/develop ^origin/master --oneline --author='^((?!excluded-author).*)$' --perl-regexp
+----
+
 .Aliases
 ----
 git config --global alias.st status
