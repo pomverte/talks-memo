@@ -1,5 +1,12 @@
 = GIT tips
 
+.Account configuration
+----
+git config user.name toto
+git config user.email toto@mail.com
+git config --list
+----
+
 .Pretty log
 ----
 git log --graph --pretty=oneline --all --decorate --abbrev-commit
