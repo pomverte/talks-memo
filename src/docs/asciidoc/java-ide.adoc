@@ -39,7 +39,7 @@ include::eclipse-code-formatter.xml[]
 | Refactor du nom de l'attribut, méthode, variable, constante, classe, ... | Alt + Shift + R                          |
 | Show annotation svn                                                      | Ctrl + Alt + A                           |
 | Synchroniser la sélection                                                | Ctrl + Alt + S                           |
-| Maximiser la vue courante                                                | Ctrl + M                                 |
+| Maximiser la vue courante                                                | Ctrl + M                                 | Ctrl + Shift + F12
 | Open Call Hierarchy                                                      | Ctrl + Alt + H                           |
 | Split Editor                                                             | Ctrl + _                                 |
 | Quick Search (case sensitive) (STS plugin)                               | Ctrl + Shift + L                         | double Shift
