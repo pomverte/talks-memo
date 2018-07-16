@@ -101,4 +101,6 @@ Responsabilités principales :
 IMPORTANT: En aucun cas la System Team ne peut porter à elle seule la responsabilité dans l'effort d'intégration.
 Les équipes Agile doivent avoir une vue systémique de ce qu'elles sont en train de créer.
 
+image::https://www.scaledagileframework.com/wp-content/uploads/2018/04/System-Team-_F01_WP.png[align="center"]
+
 source : https://www.scaledagileframework.com/system-team/
