@@ -1,0 +1,104 @@
+> The whole is greater than the sum of its parts.
+> 
+> -Aristotle
+
+
+= System Team
+
+The System Team is a specialized Agile Team that assists in building and using the Agile development environment, including Continuous Integration, test automation, and Continuous Deployment. The System Team supports the integration of assets from Agile teams, performs end-to-end Solution testing where necessary, and assists with deployment and release.
+
+In SAFe, Agile teams are not stand-alone units. Instead, they are part of the Agile Release Train (ART), responsible collectively for delivering larger system and solution value. During the transition to Agile, additional infrastructure work is typically required to integrate solution assets more frequently. To accomplish this, one or more specialized System Teams are often formed. They help build the environments and assist with system and solution integration. They also help demo the solution as it evolves.
+
+Once the infrastructure matures, System Teams are sometimes eliminated from an ART, and the development teams take on the responsibilities for maintenance and use. In larger solutions, it’s more likely that specialty expertise remains with one or more System Teams, where combining people, skills, and technical assets deliver the best economic value.
+
+= Details
+
+The System Team assists in building and using the Agile development environment infrastructure—including continuous integration—as well as integrating assets from Agile teams and performing end-to-end solution testing. They often participate in the System Demo at the end of each Iteration and the Solution Demo at the end of each Program Increment (PI), or more frequently as the case may be. The demos support the teams and other stakeholders by providing quick feedback concerning the fitness for use and integrity of the evolving end-to-end solution. System Teams may also assist with releasing and with Coordination of Solution Trains for large Value Streams.
+
+However, the System Team and Agile teams share this responsibility. Otherwise, the System Team will become a bottleneck, and the Agile teams will not be fully capable of or accountable for real value delivery.
+
+== The System Team in Solution Trains
+
+For large, multi-ART value streams that need the constructs of the Solution Train, System Teams are particularly useful. Depending on the scope and complexity of the value stream there are three main patterns for structuring the System Team:
+
+There is one System Team per ART that coordinate the solution integration and validation without additional help
+There is a System Team only for the Solution Train, which can fulfill these responsibilities for each of its ARTs
+There are System Teams for both the ARTs and Solution Train
+
+The decision regarding which pattern to use depends on the specific context of the value stream. Factors include the ART structure within the value stream (built around features or components), solution architecture, branching and integration policies across the ARTs, system testability, and development infrastructure.
+
+== Responsibilities
+
+The System Team’s primary responsibilities are:
+
+=== Building Development Infrastructure
+
+Good infrastructure supports high ART velocity, so the System Team may:
+
+* Create and maintain infrastructure, including continuous integration, automated builds, and automated build verification testing
+* Create platforms and environments for solution demos, development, quality assurance, user acceptance testing and staging
+* Create products, utilities, and scripts to automate deployment Facilitate the technical aspects of collaboration with third parties, such as data or service providers and hosting facilities
+
+=== System Integration
+
+Complex solutions also require that the System Team do the following:
+
+* Participate in PI Planning and the Pre- and Post-PI Planning meetings at the Large Solution Level, and in backlog refinement to define integration and test backlog items
+* Determine and help maintain decisions and policies for appropriate branching models
+* Run solution-level integration scripts or manually integrate where automation is not yet possible
+* Assist component teams in defining inter-component interfaces
+* Attend other teams’ stand-ups to support daily activities
+
+=== End-to-End and Solution Performance Testing
+
+The System Team may also perform some automated testing duties:
+
+* Create newly automated test scenarios Extend test scenarios to data sets that more closely match production
+* Organize test cases designed by individual teams into ordered suites
+* Perform manual testing and run automated tests for new features and Stories
+* Prioritize time-consuming tests, refactor, and run reduced test suites where applicable
+* Help teams create reduced-test suites that they can run independently
+* Test solution performance against Nonfunctional Requirements (NFRs) and assist System and Solution Engineering in identifying system shortfalls and bottlenecks
+
+=== System and Solution Demos
+
+At the appropriate time during every iteration, the ART demonstrates the current, whole system to stakeholders in the system demos. Likewise, the Solution Train must integrate and show progress at the solution demo. The System Team typically helps prepare the technical environments, so they adequately and reliably demo the new solution functionality.
+
+=== Release
+
+The System Team often has unique skills and experience related to the evolving solution. It may include senior QA personnel; perhaps the System Architect/Engineer serves as a member of this team. They have seen the solution across multiple iterations, which means they understand what it is, what it does, and how well it meets all the intended requirements. With this perspective, the System Team is likely to be directly involved in supporting the PI. As part of DevOps and the Continuous Delivery Pipeline activities, they will be doing whatever is necessary to help the ART or Solution Train prepare, package, and deploy a solution into the target environment.
+
+== Balancing Solution Integration and Testing Effort
+
+The System Team, however, can never be the entire solution to the integration challenge. Agile teams must also envision the bigger picture of what they are creating. Otherwise, not even the local excellence of Agile teams will result in good economic outcomes. Efficient solution development requires sharing best practices. For example, if just the System Team is testing NFRs, and individual teams don’t perform even lightweight performance testing, then the entire ART velocity will be slowed by the rework necessary to pass these critical quality tests. Similarly, if Agile teams are not continuously integrating, at a minimum, the immediate components they interface with, the System Team effort will be a long and painful process. Maximizing ART velocity requires a sense of balance between Agile Teams and System Teams, as Figure 1 illustrates. With maturity and automation, the optimum point for integration responsibility moves to the left.
+
+source : https://www.scaledagileframework.com/system-team/
+
+
+= Résumé
+
+La System Team est une équipe AGILE spécialisée qui aide les autres équipes AGILE (DEV Team + PO + SM) à utiliser l'environnement de développement :
+
+* la plateforme d'intégration continue et de déploiement continue
+* les tests automatisés
+* l'intégration des livrables
+* les tests de bout en bout et de performance
+* le déploiement et les release
+
+La System Team participe au  System Demo (fin de chaque sprint) et Solution Demo (fin du Programme Increment)
+
+NOTE: La System Team et Agile Team partagent les responsabilités !
+Au risque de créer un goulet d'étranglement dans la capacité de mise à disposition de valeurs ajoutées aux utilisateurs finaux
+
+Responsabilités principales :
+
+* Développement de l'infrastructure qui puisse supporter la vélocité des ART (Agile Release Train)
+* Intégration manuelle ou automatisée
+* Participer au stand up meeting des équipes Agile
+* Créer, organiser et dérouler des tests d'intégration et performance
+* Préparer les environnements pour les System et Solution Demo
+
+IMPORTANT: En aucun cas la System Team ne peut porter à elle seule la responsabilité dans l'effort d'intégration.
+Les équipes Agile doivent avoir une vue systémique de ce qu'elles sont en train de créer.
+
+source : https://www.scaledagileframework.com/system-team/
