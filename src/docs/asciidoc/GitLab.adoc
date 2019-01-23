@@ -1,0 +1,9 @@
+# GitLab
+
+# GitLab / Jenkins webhook
+
+https://github.com/jenkinsci/gitlab-plugin#gitlab-to-jenkins-authentication
+
+. Create an API token with Jenkins
+.. http://jenkins22.tyforge.in.ac-rennes.fr/user/[MY_USER]/configure
+. on GitLab, configure your project in settings to add a push event webhook with the API token
