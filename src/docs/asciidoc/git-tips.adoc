@@ -17,6 +17,11 @@ git log --graph --pretty=oneline --all --decorate --abbrev-commit
 git log origin/develop ^origin/master --oneline --author='^((?!excluded-author).*)$' --perl-regexp
 ----
 
+.Last commit and comment on all branches
+----
+git branch -a -v
+----
+
 .Aliases
 ----
 git config --global alias.st status
