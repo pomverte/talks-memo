@@ -1,0 +1,8 @@
+# mRemoteNG
+
+https://mremoteng.org/
+
+external tools :
+
+* `cmd` / `/k echo %password%`
+* `C:\Program Files\FileZilla FTP Client\filezilla.exe` / `sftp://%Username%:%Password%@%Hostname%`
