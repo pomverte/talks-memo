@@ -3,11 +3,12 @@
 https://www.ssh.com/ssh/keygen/
 
 . generate a pair of ssh key (public and private)
-. copy the public key to distant remote machine
-
+. copy the public key to distant remote machine (into `~/.ssh/authorized_keys`)
 
 ```
-ssh-keygen -t rsa -b 2048 -C "email@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 ll ~/.ssh/
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 ```
+
+WARNING: do no disclose the private key `~/.ssh/id_rsa`
