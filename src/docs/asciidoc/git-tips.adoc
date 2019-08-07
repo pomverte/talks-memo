@@ -22,6 +22,11 @@ git log origin/develop ^origin/master --oneline --author='^((?!excluded-author).
 git branch -a -v
 ----
 
+.Clean branches
+----
+git remote prune origin
+----
+
 .Aliases
 ----
 git config --global alias.st status
