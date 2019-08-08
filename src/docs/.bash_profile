@@ -11,3 +11,6 @@ source /usr/local/bin/virtualenvwrapper.sh
     [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
         . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 }
+
+complete -C /usr/local/bin/terraform terraform
+export PATH="$HOME/.tgenv/bin:$PATH"
