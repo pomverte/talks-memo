@@ -12,3 +12,32 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 ```
 
 WARNING: do no disclose the private key `~/.ssh/id_rsa`
+
+## SSH Agent
+
+* Edit a file `ssh_config`
+
+.ssh_config
+---
+Host bastion
+  User ansible
+  StrictHostKeyChecking=no
+  UserKnownHostsFile=/dev/null
+  Hostname bastion.domain.com
+
+Host 10.182.*
+  User ansible
+  StrictHostKeyChecking=no
+  UserKnownHostsFile=/dev/null
+  ProxyJump bastionansible$[docs] ll ~/.ssh/
+---
+
+* Configure SSH Agent
+* Add the private key associated to the public key on the bastion
+* Connect to targeted machine (ex : `10.182.250.4`)
+
+---
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/bastion_private
+ssh -A -F ssh_config 10.182.250.4
+---
