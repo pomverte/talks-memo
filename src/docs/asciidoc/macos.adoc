@@ -1,0 +1,6 @@
+= Stuff about macOS
+
+https://sourabhbajaj.com/mac-setup/
+
+
+ qlmanage -t -s 1000 -o . picture.svg
