@@ -30,7 +30,7 @@ git remote prune origin
 .Aliases
 ----
 git config --global alias.st status
-git config --global alias.lg "log --graph --date=relative --pretty=tformat:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --all --max-count=100"
+git config --global alias.lg "git log --graph --pretty=format:'%C(bold yellow)%h%Creset -%C(auto)%d%Creset %s %C(bold blue)<%an>%Creset %C(bold green)(%cr)%Creset' --all --date=relative"
 ----
 
 .Proxy configuration
