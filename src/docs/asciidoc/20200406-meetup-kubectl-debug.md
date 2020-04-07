@@ -31,7 +31,7 @@ but why ? il s’agit d’une base from scratch
 
 ## Okay, et si on y injectait busybox ?
 
-### 1 visualiser l’aroborescence et exporter busybox
+### 1 visualiser l’arborescence et exporter busybox
 ```
 docker container run busybox
 docker container export CONTAINER_ID_BUSYBOX | tar -tvf-
@@ -47,7 +47,7 @@ docker container cp CONTAINER_ID_BUSYBOX:/bin/busybox crazy-bbox
 ## Acces au namespace linux pour ce mettre dans le namespace du container
 ```
 docker container inspect CONTAINER_ID-KI_BUG | grep -i pid
-nsenter --target PID -u -n -i (mémotechnique : "T'ES PUNI !!!")
+nsenter -t PID -u -n -i (mémotechnique : "T'ES PUNI !!!")
 ```
 
 ## Autre option 
