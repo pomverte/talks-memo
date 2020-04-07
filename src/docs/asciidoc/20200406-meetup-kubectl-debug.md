@@ -19,7 +19,7 @@ ah non, tout va bien
 
 Bon, et le serveur, il expose quoi ?
 
-`sudo netstat -tuna` (mémotechnique : TUNA PLZ !!!)
+`sudo netstat -tunapl` (mémotechnique : TUNA PLZ !!!)
 
 tiens, bizarre ça écoute sur un port funky : 88
 
