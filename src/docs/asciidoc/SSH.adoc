@@ -29,7 +29,7 @@ Host 10.182.*
   User ansible
   StrictHostKeyChecking=no
   UserKnownHostsFile=/dev/null
-  ProxyJump bastionansible$[docs] ll ~/.ssh/
+  ProxyJump bastion
 ```
 
 * Configure SSH Agent
