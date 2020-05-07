@@ -69,9 +69,10 @@ http://docs.ansible.com/ansible/intro_configuration.html
 Tester vos roles !
 
 ----
-touch requirements.txt
-cat ansible==2.8.2 >> requirements.txt
-cat molecule==2.20.2 >> requirements.txt
+cat > requirements.txt <<EOF
+ansible==2.8.2
+molecule==2.20.2
+EOF
 pip install -r requirements.txt
 
 molecule init role --role-name my-new-role --verifier-name inspec --driver-name docker
